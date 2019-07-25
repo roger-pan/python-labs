@@ -14,3 +14,17 @@
 	- Calculate how many seconds are in a year.
 
 '''
+
+# Can write directly in the Python Console to execute script
+
+print("hello world") # print "hello world" to console
+
+# print("hello world" results in unexpected EOF (end of file) while parsing
+
+# help('print')
+
+# Seconds in a year
+
+x = 365 * 24 * 60 * 60
+
+print(x) # printing the number of seconds in a year
