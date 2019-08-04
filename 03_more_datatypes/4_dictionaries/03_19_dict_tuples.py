@@ -5,3 +5,8 @@ input_dict = {"item1": 5, "item2": 6, "item3": 1}
 result_list = [("item3", 1), ("item1", 5), ("item2", 6)]
 
 '''
+input_dict = {"item1": 5, "item2": 6, "item3": 1}
+lst = []
+for x in input_dict.keys():
+    lst.append((x,input_dict[x]))
+print(lst)

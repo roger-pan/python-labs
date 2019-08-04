@@ -6,3 +6,8 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+user_input = "hello"
+result = {}
+for x in user_input:
+    result[x] = user_input.count(x)
+print(result)
