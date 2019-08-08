@@ -18,3 +18,31 @@ Cars, animals, poker games, sports teams, trees, beers, people etc...
 
 
 '''
+
+# Creating a class called hat
+class hat:
+    """Attributes of a hat"""
+
+    body_part = "head"
+    price = 5
+
+# Initialising hat
+    def __init__(self,brand = "generic",colour = "black", pattern = "plain"):
+        self.brand = brand
+        self.colour = colour
+        self.pattern = pattern
+# Calling __str__
+    def __str__(self):
+        return f"This is a {self.pattern} {self.colour} {self.brand} hat"
+
+    def __add__(self, other):
+        return "You've got two hats"
+
+
+hat_1 = hat("Nike","white","plain")
+print(hat_1)
+hat_2 = hat("Adidas","yellow","spotted")
+print(hat_2)
+print(hat.body_part)
+print(hat.price)
+print(hat_1 + hat_2)
