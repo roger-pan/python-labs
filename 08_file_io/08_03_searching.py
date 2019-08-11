@@ -8,3 +8,15 @@ Start with a small folder to make it easy to check if your program is working co
 small folder name with a bigger folder. This program should work for any specified folder on your computer.
 
 '''
+import os
+path = '/Users/Roger/Downloads'
+directory = os.walk(path)
+print(directory)
+
+jpg_file = []
+for r,d,f in directory:
+    for file in f:
+        if ".jpg" in file:
+            jpg_file.append(os.path.join(r,file))
+
+print(jpg_file)
