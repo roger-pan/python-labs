@@ -8,3 +8,10 @@ print(list_[1])
 This raises and exception that needs to be handled.
 
 '''
+list_ = ["hello world!"]
+try:
+    print(list_[1])
+except IndexError:
+    print("This index does not exist")
+except Exception as e:
+    print(e)

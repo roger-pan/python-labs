@@ -8,3 +8,17 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+
+num_1 = input("Input a number: ")
+num_2 = input("Input another number: ")
+
+try:
+    float(num_1)/float(num_2)
+except ValueError:
+    print("Inputs must be numbers")
+except ZeroDivisionError:
+    print("You can't divide by zero")
+else:
+    print(float(num_1)/float(num_2))
+
+
